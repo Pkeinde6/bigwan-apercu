@@ -13,8 +13,8 @@
 // Remplace le route() de Ziggy (@routes) : l'aperçu n'a pas de serveur, les liens de compte menent a l'accueil
 function route(nom){var r=nom&&/^vitrine./.test(nom)&&Ziggy.routes[nom];var u=r?'/'+r.uri.replace(/^\//,''):'/';return Ziggy.url+(u==='/'?'/':u+'/');}</script>
 <script>(function(){var P="/bigwan-apercu/fusion";document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey)return;var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!h||h.charAt(0)!=='/'||h.indexOf('//')===0||h.indexOf(P+'/')===0)return;e.preventDefault();e.stopImmediatePropagation();var i=h.indexOf('#'),c=i<0?h:h.slice(0,i),d=i<0?'':h.slice(i);var q=c.indexOf('?'),r=q<0?'':c.slice(q);if(q>=0)c=c.slice(0,q);if(c===location.pathname.slice(P.length)||c+'/'===location.pathname.slice(P.length)){if(d)location.hash=d;return;}location.href=P+c.replace(/\/?$/,'/')+r+d;},true);})();</script>
-<link rel="stylesheet" href="/bigwan-apercu/fusion/build/assets/app-DHJno0Dx.css">
-<script type="module" src="/bigwan-apercu/fusion/build/assets/app-DNRvtowt.js"></script>
+<link rel="stylesheet" href="/bigwan-apercu/fusion/build/assets/app-JRtYAJkV.css">
+<script type="module" src="/bigwan-apercu/fusion/build/assets/app-BbzQ6EcJ.js"></script>
 </head>
 <body class="font-sans antialiased">
 <div id="app" data-page="{&quot;component&quot;:&quot;Vitrine/EspaceClient&quot;,&quot;props&quot;:{&quot;errors&quot;:{},&quot;auth&quot;:{&quot;user&quot;:null}},&quot;url&quot;:&quot;/bigwan-apercu/fusion/espace-client/&quot;,&quot;version&quot;:&quot;08a0135492ccf3714a8bc0d7e82e6788&quot;,&quot;clearHistory&quot;:false,&quot;encryptHistory&quot;:false}"></div>
